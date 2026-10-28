@@ -59,8 +59,11 @@ cd ohaudio-gnome
 ./install.sh
 ```
 
-Then log out and back in (on Wayland GNOME only picks up new extensions after a new
-session) and turn it on:
+> [!IMPORTANT]
+> **Log out and back in after installing.** GNOME (on Wayland) only notices a newly
+> installed extension in a new session, so the visualizer won't appear until you do.
+
+After logging back in, turn it on:
 
 ```bash
 gnome-extensions enable ohaudio-gnome@delete-read-write
@@ -79,6 +82,8 @@ Settings live in the Extensions app, or right-click the desktop widget, or use
 - **If you use Blur my Shell** with live blur behind every window, anything animated
   underneath those windows makes them re-blur all the time. Keeping the widget
   above the windows, or limiting the blur to a few apps, takes that load away.
+- **Nothing shows up after installing?** Log out and back in first: GNOME only loads
+  new extensions in a new session.
 - **Nothing moves?** Check that cava is installed and that something is actually
   playing. The *Sound* page lets you pick a specific audio source if *auto* picks
   the wrong one.
@@ -151,8 +156,11 @@ cd ohaudio-gnome
 ./install.sh
 ```
 
-Потом выйди из сессии и зайди снова (в Wayland GNOME видит новые расширения только
-после перезахода) и включи его:
+> [!IMPORTANT]
+> **После установки выйди из сессии и зайди снова.** GNOME (в Wayland) замечает новое
+> расширение только в новой сессии, так что до перезахода визуализатор не появится.
+
+Когда зайдёшь снова, включи его:
 
 ```bash
 gnome-extensions enable ohaudio-gnome@delete-read-write
@@ -171,6 +179,8 @@ gnome-extensions enable ohaudio-gnome@delete-read-write
 - **Если стоит Blur my Shell** с живым размытием за каждым окном, любая анимация под
   этими окнами заставляет их размываться заново без остановки. Помогает держать виджет
   поверх окон или оставить размытие только для пары приложений.
+- **После установки ничего не появилось?** Сначала перезайди в сессию: GNOME загружает
+  новые расширения только в новой сессии.
 - **Ничего не двигается?** Проверь, что cava установлена и что что-то действительно
   играет. На вкладке *Звук* можно выбрать конкретный источник, если *auto* хватает
   не тот.
