@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <!-- Smoky glass card -->
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2b3048"/>
+      <stop offset="1" stop-color="#151722"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.16"/>
+      <stop offset="0.45" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <!-- Rainbow across the bars -->
+    <linearGradient id="rainbow" x1="40" y1="0" x2="216" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff5a5a"/>
+      <stop offset="0.2" stop-color="#ffb347"/>
+      <stop offset="0.4" stop-color="#ffe259"/>
+      <stop offset="0.6" stop-color="#5ce1a0"/>
+      <stop offset="0.8" stop-color="#4fa8ff"/>
+      <stop offset="1" stop-color="#b57bff"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="172" x2="0" y2="214" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="reflectionFade">
+      <rect x="0" y="172" width="256" height="50" fill="url(#fade)"/>
+    </mask>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <!-- Bars: x, top -->
+    <g id="bars" fill="url(#rainbow)">
+      <rect x="44"  y="112" width="16" height="60" rx="8"/>
+      <rect x="68"  y="70"  width="16" height="102" rx="8"/>
+      <rect x="92"  y="48"  width="16" height="124" rx="8"/>
+      <rect x="116" y="86"  width="16" height="86" rx="8"/>
+      <rect x="140" y="60"  width="16" height="112" rx="8"/>
+      <rect x="164" y="98"  width="16" height="74" rx="8"/>
+      <rect x="188" y="122" width="16" height="50" rx="8"/>
+    </g>
+  </defs>
+
+  <rect x="8" y="8" width="240" height="240" rx="56" fill="url(#glass)"/>
+  <rect x="8" y="8" width="240" height="240" rx="56" fill="url(#sheen)"/>
+  <rect x="8.5" y="8.5" width="239" height="239" rx="55.5" fill="none" stroke="#fff" stroke-opacity="0.14"/>
+
+  <use href="#bars" filter="url(#glow)" opacity="0.55"/>
+  <use href="#bars"/>
+  <!-- Squashed, fading reflection under the baseline -->
+  <g mask="url(#reflectionFade)">
+    <use href="#bars" transform="translate(0 215) scale(1 -0.25)"/>
+  </g>
+</svg>

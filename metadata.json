@@ -1,0 +1,11 @@
+{
+  "uuid": "ohaudio-gnome@delete-read-write",
+  "name": "OhAudio-Gnome",
+  "description": "A music visualizer for the top bar and the desktop, powered by CAVA: bars, blocks and waves, gradients and a living rainbow, on frosted glass. Inspired by KDE Kurve.\n\nhttps://github.com/delete-read-write/ohaudio-gnome",
+  "shell-version": [
+    "50"
+  ],
+  "version": 1,
+  "settings-schema": "org.gnome.shell.extensions.ohaudio-gnome",
+  "url": "https://github.com/delete-read-write/ohaudio-gnome"
+}

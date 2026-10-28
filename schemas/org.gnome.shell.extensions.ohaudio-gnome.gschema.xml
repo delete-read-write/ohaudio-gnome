@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.ohaudio-gnome" path="/org/gnome/shell/extensions/ohaudio-gnome/">
+    <!-- Panel (tray) visualizer; the panel keeps a small icon with the menu when it is hidden -->
+    <key name="language" type="s"><default>'auto'</default><summary>auto | en | ru</summary></key>
+    <key name="show-panel" type="b"><default>false</default></key>
+    <key name="panel-style" type="s"><default>'bars'</default><summary>bars | blocks | wave | fill</summary></key>
+    <key name="panel-position" type="s"><default>'right'</default><summary>left | center | right</summary></key>
+    <key name="panel-index" type="i"><default>0</default></key>
+    <key name="panel-width" type="i"><default>120</default></key>
+    <key name="panel-orientation" type="s"><default>'bottom'</default><summary>bottom | top | left | right</summary></key>
+    <key name="panel-gap" type="i"><default>30</default></key>
+    <key name="panel-rounded" type="b"><default>true</default></key>
+    <key name="panel-centered" type="b"><default>false</default></key>
+    <key name="panel-line-width" type="i"><default>1</default></key>
+    <key name="panel-block-square" type="b"><default>false</default></key>
+    <key name="panel-block-height" type="i"><default>3</default></key>
+    <key name="panel-block-spacing" type="i"><default>1</default></key>
+
+    <!-- panel colours & effects -->
+    <key name="panel-color-mode" type="s"><default>'rainbow'</default><summary>solid | gradient | rainbow</summary></key>
+    <key name="panel-gradient-direction" type="s"><default>'vertical'</default></key>
+    <key name="panel-color1" type="s"><default>'rgb(79,142,220)'</default></key>
+    <key name="panel-color2" type="s"><default>'rgb(143,211,232)'</default></key>
+    <key name="panel-rainbow-speed" type="i"><default>20</default><summary>Hue drift, degrees per second</summary></key>
+    <key name="panel-rainbow-saturation" type="i"><default>100</default></key>
+    <key name="panel-rainbow-lightness" type="i"><default>68</default></key>
+    <key name="panel-rainbow-span" type="i"><default>360</default><summary>Hue range across the visualizer, degrees</summary></key>
+    <key name="panel-rainbow-hue" type="i"><default>0</default><summary>Starting hue, degrees</summary></key>
+    <key name="panel-transparency" type="i"><default>0</default><summary>0 = opaque</summary></key>
+    <key name="panel-glow" type="i"><default>60</default></key>
+    <key name="panel-peaks" type="b"><default>false</default></key>
+    <key name="panel-gloss" type="b"><default>true</default></key>
+
+    <!-- Desktop widget -->
+    <key name="show-desktop" type="b"><default>true</default></key>
+    <key name="desktop-layer" type="s"><default>'below'</default><summary>above (over windows, under top bar and dock) | below (under windows)</summary></key>
+    <key name="desktop-style" type="s"><default>'bars'</default></key>
+    <key name="desktop-width" type="i"><default>420</default></key>
+    <key name="desktop-height" type="i"><default>240</default></key>
+    <key name="desktop-x" type="i"><default>-1</default><summary>Logical px from screen left, -1 = top-left default</summary></key>
+    <key name="desktop-y" type="i"><default>-1</default></key>
+    <key name="desktop-move" type="b"><default>false</default></key>
+    <key name="desktop-orientation" type="s"><default>'bottom'</default><summary>bottom | top | left | right</summary></key>
+    <key name="desktop-gap" type="i"><default>30</default></key>
+    <key name="desktop-rounded" type="b"><default>true</default></key>
+    <key name="desktop-centered" type="b"><default>false</default></key>
+    <key name="desktop-line-width" type="i"><default>2</default></key>
+    <key name="desktop-block-square" type="b"><default>false</default></key>
+    <key name="desktop-block-height" type="i"><default>4</default></key>
+    <key name="desktop-block-spacing" type="i"><default>2</default></key>
+
+    <!-- desktop colours & effects -->
+    <key name="desktop-color-mode" type="s"><default>'rainbow'</default><summary>solid | gradient | rainbow</summary></key>
+    <key name="desktop-gradient-direction" type="s"><default>'vertical'</default></key>
+    <key name="desktop-color1" type="s"><default>'rgb(79,142,220)'</default></key>
+    <key name="desktop-color2" type="s"><default>'rgb(143,211,232)'</default></key>
+    <key name="desktop-rainbow-speed" type="i"><default>20</default><summary>Hue drift, degrees per second</summary></key>
+    <key name="desktop-rainbow-saturation" type="i"><default>100</default></key>
+    <key name="desktop-rainbow-lightness" type="i"><default>68</default></key>
+    <key name="desktop-rainbow-span" type="i"><default>360</default><summary>Hue range across the visualizer, degrees</summary></key>
+    <key name="desktop-rainbow-hue" type="i"><default>0</default><summary>Starting hue, degrees</summary></key>
+    <key name="desktop-transparency" type="i"><default>0</default><summary>0 = opaque</summary></key>
+    <key name="desktop-glow" type="i"><default>60</default></key>
+    <key name="desktop-peaks" type="b"><default>false</default></key>
+    <key name="desktop-gloss" type="b"><default>true</default></key>
+    <key name="desktop-reflection" type="b"><default>true</default></key>
+
+    <!-- Widget background: none | glass | gradient (independent from visualizer colours) -->
+    <key name="bg-mode" type="s"><default>'glass'</default></key>
+    <key name="glass-color" type="s"><default>'rgb(20,20,26)'</default><summary>Glass tint / solid colour / gradient start</summary></key>
+    <key name="glass-transparency" type="i"><default>65</default><summary>0 = opaque</summary></key>
+    <key name="bg-color2" type="s"><default>'rgb(46,52,84)'</default><summary>Gradient end</summary></key>
+    <key name="bg-angle" type="i"><default>135</default><summary>Gradient direction, 0 = up, clockwise</summary></key>
+    <key name="glass-blur" type="i"><default>30</default></key>
+    <key name="glass-brightness" type="i"><default>85</default></key>
+    <key name="bg-light" type="b"><default>false</default><summary>Light and shadow over the background</summary></key>
+    <key name="smoke-light-angle" type="i"><default>315</default></key>
+    <key name="smoke-dark-angle" type="i"><default>135</default></key>
+    <key name="smoke-light" type="i"><default>22</default></key>
+    <key name="smoke-dark" type="i"><default>45</default></key>
+    <key name="smoke-softness" type="i"><default>60</default></key>
+    <key name="smoke-drift" type="b"><default>true</default></key>
+    <key name="glass-highlight" type="b"><default>false</default></key>
+    <key name="glass-radius" type="i"><default>28</default></key>
+    <key name="glass-padding" type="i"><default>16</default></key>
+    <key name="glass-border" type="b"><default>true</default></key>
+    <key name="glass-border-color" type="s"><default>'rgb(255,255,255)'</default></key>
+    <key name="glass-border-transparency" type="i"><default>84</default></key>
+
+
+    <!-- Performance -->
+    <key name="panel-fps" type="i"><default>30</default><summary>Max repaint rate of the panel visualizer</summary></key>
+    <key name="desktop-fps" type="i"><default>30</default><summary>Max repaint rate of the desktop widget</summary></key>
+    <key name="idle-fps" type="i"><default>30</default></key>
+    <key name="pause-fullscreen" type="b"><default>true</default></key>
+    <key name="hide-when-silent" type="b"><default>false</default></key>
+    <key name="silent-seconds" type="i"><default>3</default></key>
+
+    <!-- CAVA -->
+    <key name="bars" type="i"><default>36</default></key>
+    <key name="autosens" type="b"><default>true</default></key>
+    <key name="sensitivity" type="i"><default>100</default></key>
+    <key name="noise-reduction" type="i"><default>77</default></key>
+    <key name="monstercat" type="b"><default>false</default></key>
+    <key name="waves" type="b"><default>false</default></key>
+    <key name="stereo" type="b"><default>false</default></key>
+    <key name="reverse" type="b"><default>false</default></key>
+    <key name="lower-cutoff" type="i"><default>50</default></key>
+    <key name="higher-cutoff" type="i"><default>10000</default></key>
+    <key name="source" type="s"><default>'auto'</default></key>
+    <key name="cava-path" type="s"><default>''</default></key>
+  </schema>
+</schemalist>

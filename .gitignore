@@ -1,0 +1,3 @@
+build/
+*.zip
+schemas/gschemas.compiled
